@@ -10,3 +10,5 @@ scripts/ccc
 bak/
 log-*
 *.patch
+.clangd/
+*.json
