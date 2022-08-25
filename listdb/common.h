@@ -23,6 +23,9 @@
 #endif
 #endif
 
+#define LISTDB_STRING_KEY
+#define LISTDB_WISCKEY
+
 #ifndef LISTDB_STRING_KEY
 #include "listdb/core/integer_key.h"
 #define Key IntegerKey
