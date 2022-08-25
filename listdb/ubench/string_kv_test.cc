@@ -11,7 +11,7 @@
 #include <shared_mutex>
 #include <thread>
 #include <vector>
-#include <experimental/filesystem>
+#include <filesystem>
 #include <unordered_map>
 
 #include <getopt.h>
@@ -39,7 +39,7 @@ constexpr size_t NUM_WORKS = 1 * 1000 * 1000;
 
 constexpr int NUM_SHARDS = kNumShards;
 
-namespace fs = std::experimental::filesystem::v1;
+namespace fs = std::filesystem;
 
 enum OpType {
   OP_INSERT,

@@ -10,7 +10,7 @@
 #include <thread>
 #include <unordered_map>
 
-#include <experimental/filesystem>
+#include <filesystem>
 
 #include "listdb/common.h"
 #include "listdb/index/lockfree_skiplist.h"
@@ -21,7 +21,7 @@
 #include "listdb/lsm/pmemtable_list.h"
 #include "listdb/lsm/pmemtable.h"
 
-namespace fs = std::experimental::filesystem::v1;
+namespace fs = std::filesystem;
 
 class ListDB {
  public:

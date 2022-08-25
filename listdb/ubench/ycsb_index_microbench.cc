@@ -9,7 +9,7 @@
 #include <shared_mutex>
 #include <thread>
 #include <vector>
-#include <experimental/filesystem>
+#include <filesystem>
 #include <unordered_map>
 
 #include <getopt.h>
@@ -57,7 +57,7 @@ DEFINE_string(bind_type, "cpu_numa_rr", "worker thread bind type: <cpu_numa_rr|n
 
 //#define COUNT_FOUND
 
-namespace fs = std::experimental::filesystem::v1;
+namespace fs = std::filesystem;
 
 enum OpType {
   OP_INSERT,

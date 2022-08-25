@@ -1,13 +1,13 @@
 #include <iostream>
 #include <fstream>
 #include <stdexcept>
-#include <experimental/filesystem>
+#include <filesystem>
 
 #include <libpmemobj++/make_persistent_atomic.hpp>
 
 #include "listdb/pmem/pmem.h"
 
-namespace fs = std::experimental::filesystem::v1;
+namespace fs = std::filesystem;
 
 #define force_inline __attribute__((always_inline)) inline
 /*

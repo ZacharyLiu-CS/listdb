@@ -11,7 +11,7 @@
 #include <thread>
 #include <unordered_map>
 
-#include <experimental/filesystem>
+#include <filesystem>
 
 #include <libpmemobj++/pexceptions.hpp>
 #include <numa.h>
@@ -61,8 +61,9 @@
 //#define L0_COMPACTION_ON_IDLE
 //#define L0_COMPACTION_YIELD
 
-namespace fs = std::experimental::filesystem::v1;
 
+// // namespace fs = std::experimental::filesystem::v1;
+namespace fs = std::filesystem;
 class ListDB {
  public:
   using MemNode = lockfree_skiplist::Node;
@@ -523,7 +524,7 @@ void ListDB::Open(std::string db_path, uint64_t pool_size) {
     }
   }
 #else
-  std::cerr << "Open() for LISTDB_WAL is not implemented." << std:endl;
+  std::cerr << "Open() for LISTDB_WAL is not implemented." << std::endl;
   exit(1);
 #endif
 

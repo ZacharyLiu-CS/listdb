@@ -13,8 +13,8 @@ int main() {
 #include <vector>
 #include <iostream>
 
-#include <experimental/filesystem>
-namespace fs = std::experimental::filesystem::v1;
+#include <filesystem>
+namespace fs = std::filesystem;
 
 #include "listdb/pmem/pmem.h"
 #include "listdb/core/pmem_log.h"
