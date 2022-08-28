@@ -6,8 +6,8 @@
 
 #include <libpmemobj.h>
 
-#include "common.h"
-#include "pmem.h"
+#include "listdb/common.h"
+#include "listdb/pmem/pmem.h"
 
 class LogBlock {
  public:

@@ -2,6 +2,7 @@
 #define LISTDB_CORE_LOG_BUFFER_H_
 
 #include "listdb/common.h"
+#include "listdb/core/pmem_log.h"
 
 class LogBuffer {
  public:

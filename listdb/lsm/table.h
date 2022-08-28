@@ -8,7 +8,7 @@
 
 class Table {
  public:
-  Table(const size_t capacity, TableType type);
+  Table(const size_t capacity, TableType type) : capacity_(capacity), type_(type), size_(0), next_(nullptr) { }
 
   virtual void* Put(const Key& key, const Value& value) = 0;
 
@@ -48,7 +48,6 @@ class Table {
   //std::atomic<size_t> size_retired_;
 };
 
-Table::Table(const size_t capacity, TableType type) : capacity_(capacity), type_(type), size_(0), next_(nullptr) { }
 
 inline void Table::SetNext(Table* next, const std::memory_order mo) {
   next_.store(next, mo);

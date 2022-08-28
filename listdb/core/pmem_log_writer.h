@@ -5,7 +5,7 @@
 
 #include <libpmemobj.h>
 
-#include "listdb/index/lockfree_pskiplist.h"
+#include "listdb/index/lockfree_skiplist.h.h"
 
 class IulWriter : public LogWriter {
  public:

@@ -10,6 +10,7 @@
 #include "common.h"
 #include "ds/lockfree_skiplist.h"
 
+
 lockfree_pskiplist::lockfree_pskiplist(PMEMobjpool* pops[]) {
   for (int i = 0; i < kNumRegions; i++) {
     pop_[i] = pops[i];
